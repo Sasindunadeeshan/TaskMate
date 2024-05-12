@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mainBackgroundColor"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
 
@@ -26,7 +26,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="16dp"
                 android:text="Welcome Back"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -38,7 +38,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="4dp"
                 android:text="Today's Task"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
@@ -79,18 +79,17 @@
                 app:errorEnabled="false"
                 app:hintEnabled="false"
                 app:startIconDrawable="@drawable/ic_search"
-                app:startIconTint="@color/white">
+                app:startIconTint="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edSearch"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/secBlack"
-                    android:hint="Enter search title"
+                    android:layout_height="52dp"
+                    android:background="@drawable/search"
                     android:imeOptions="actionSearch"
                     android:inputType="text"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white" />
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/secBlack" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -99,9 +98,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/edSearchL"
-                android:layout_marginTop="8dp"
-                android:layout_marginHorizontal="10dp"
                 android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="8dp"
                 android:clipToPadding="false"
                 android:orientation="vertical"
                 android:overScrollMode="never"
@@ -117,8 +116,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/secBlack"
-        android:text="Add Task"
+        android:backgroundTint="#5f33e1"
+        android:text="Add"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"

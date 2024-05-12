@@ -9,7 +9,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup">
 
         <TextView
             android:id="@+id/titleTaskTxt"
@@ -45,8 +46,8 @@
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.App.TextInputLayout"
                 android:id="@+id/edTaskTitleL"
+                style="@style/Widget.App.TextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter The Task Title">
@@ -55,14 +56,14 @@
                     android:id="@+id/edTaskTitle"
                     android:layout_width="match_parent"
                     android:layout_height="?actionBarSize"
-                    android:background="#EAE4E8"
+                    android:background="@color/white"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.App.TextInputLayout"
                 android:id="@+id/edTaskDescL"
+                style="@style/Widget.App.TextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter The Task Description">
@@ -71,7 +72,7 @@
                     android:id="@+id/edTaskDesc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#EAE4E8"
+                    android:background="@color/white"
                     android:gravity="top|start"
                     android:inputType="textMultiLine"
                     android:lines="5"
@@ -81,12 +82,12 @@
 
             <Button
                 android:id="@+id/updateTaskBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="?actionBarSize"
+                style="@style/RoundedCorner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="4dp"
-                android:backgroundTint="@color/black"
-                style="@style/Widget.App.Button.Fill"
+                android:backgroundTint="#5f33e1"
                 android:text="Update Task"
                 android:textSize="20sp" />
         </LinearLayout>
