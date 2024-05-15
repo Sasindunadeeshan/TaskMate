@@ -4,4 +4,13 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
+
+    <style name="RoundedCornerExtendedFAB" parent="@style/Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/RoundedCornerShapeAppearance</item>
+    </style>
+
+    <style name="RoundedCornerShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>
