@@ -2,11 +2,8 @@ package com.coding.meet.todo_app.viewmodels
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.MutableLiveData
-import androidx.room.Query
 import com.coding.meet.todo_app.models.Task
 import com.coding.meet.todo_app.repository.TaskRepository
-import com.coding.meet.todo_app.utils.Resource
 
 class TaskViewModel(application: Application) : AndroidViewModel(application) {
 
